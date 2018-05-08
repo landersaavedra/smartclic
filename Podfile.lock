@@ -1,0 +1,91 @@
+PODS:
+  - AWSAuthCore (2.6.17):
+    - AWSCore (= 2.6.17)
+  - AWSCognito (2.6.17):
+    - AWSCore (= 2.6.17)
+  - AWSCognitoIdentityProvider (2.6.17):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.6.17)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.6.17)
+  - AWSDynamoDB (2.6.17):
+    - AWSCore (= 2.6.17)
+  - AWSEC2 (2.6.17):
+    - AWSCore (= 2.6.17)
+  - AWSIoT (2.6.17):
+    - AWSCore (= 2.6.17)
+  - AWSMobileClient (2.6.17):
+    - AWSAuthCore (= 2.6.17)
+  - AWSS3 (2.6.17):
+    - AWSCore (= 2.6.17)
+  - AWSSES (2.6.17):
+    - AWSCore (= 2.6.17)
+  - AWSSimpleDB (2.6.17):
+    - AWSCore (= 2.6.17)
+  - AWSSNS (2.6.17):
+    - AWSCore (= 2.6.17)
+  - AWSSQS (2.6.17):
+    - AWSCore (= 2.6.17)
+  - CocoaAsyncSocket (7.6.3)
+  - CocoaMQTT (1.1.2):
+    - CocoaAsyncSocket (~> 7.6.1)
+    - SwiftyTimer (~> 2.0.0)
+  - SwiftyTimer (2.0.0)
+
+DEPENDENCIES:
+  - AWSCognito
+  - AWSCognitoIdentityProvider
+  - AWSDynamoDB (~> 2.6.13)
+  - AWSEC2
+  - AWSIoT
+  - AWSMobileClient (~> 2.6.13)
+  - AWSS3
+  - AWSSES
+  - AWSSimpleDB
+  - AWSSNS
+  - AWSSQS
+  - CocoaMQTT
+  - SwiftyTimer
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AWSAuthCore
+    - AWSCognito
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSDynamoDB
+    - AWSEC2
+    - AWSIoT
+    - AWSMobileClient
+    - AWSS3
+    - AWSSES
+    - AWSSimpleDB
+    - AWSSNS
+    - AWSSQS
+    - CocoaAsyncSocket
+    - CocoaMQTT
+    - SwiftyTimer
+
+SPEC CHECKSUMS:
+  AWSAuthCore: 15a48ce8153e6b7b7df763e8df9d993c7797957e
+  AWSCognito: 2a3da30af7d731cfd1032812a052e65099bbe26a
+  AWSCognitoIdentityProvider: 9f15b1d0073c3585d791877c98e1315c368b4f18
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: 82fbb01d73a22cfae77ac2f03f6073a123092452
+  AWSDynamoDB: bbfc2583819099ccc0ba92eb54cb425049d4278b
+  AWSEC2: 75f0c7bc30a063c1c171413ae950f94958fd6f14
+  AWSIoT: 68f7b6d87856136843a8fe496b4a50fb590727e1
+  AWSMobileClient: 7b8dd4ef7a7d5c08f258b547d061c3c2018d32d8
+  AWSS3: 00482eb3363cab1d4c3fd7b0bb7c117ae7264505
+  AWSSES: 002427d285d8e3a552612d1318d42f7e44adc227
+  AWSSimpleDB: 01fbfca17057f46e64f36afb059cefabbf7e1c65
+  AWSSNS: 4f5ee521ea0e4fdbada21b8121de7f792d52a846
+  AWSSQS: 923b4f77e62a795ffe9f8b7a4095fe188ee9fb57
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  CocoaMQTT: d33ab3cd4e329f9f1cfbb62e25306a318a606616
+  SwiftyTimer: 2efd74b060d69ad4f1496baf5bbedbe132125fcf
+
+PODFILE CHECKSUM: 46c5fc1fd82e90e176564920e44a3fde6dfe8acb
+
+COCOAPODS: 1.5.0

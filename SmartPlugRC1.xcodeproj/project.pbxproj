@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62DC216B1FDDDCB700936700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DC216A1FDDDCB700936700 /* AppDelegate.swift */; };
+		62DC216D1FDDDCB700936700 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DC216C1FDDDCB700936700 /* FirstViewController.swift */; };
+		62DC216F1FDDDCB700936700 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DC216E1FDDDCB700936700 /* SecondViewController.swift */; };
+		62DC21721FDDDCB700936700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62DC21701FDDDCB700936700 /* Main.storyboard */; };
+		62DC21741FDDDCB700936700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62DC21731FDDDCB700936700 /* Assets.xcassets */; };
+		62DC21821FDF944B00936700 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DC21811FDF944B00936700 /* Server.swift */; };
+		62DC21841FDF946A00936700 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DC21831FDF946A00936700 /* Topics.swift */; };
+		715C98C987D6450394C77E5F /* Pods_SmartPlugRC1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB9E6DBA06A9D6C8E058358 /* Pods_SmartPlugRC1.framework */; };
+		8868129E206C819500419532 /* Alarma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8868129B206C819500419532 /* Alarma.swift */; };
+		8868129F206C819500419532 /* Coneccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8868129C206C819500419532 /* Coneccion.swift */; };
+		886812A0206C819500419532 /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8868129D206C819500419532 /* Registro.swift */; };
+		886812A2206C86C700419532 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 886812A1206C86C700419532 /* awsconfiguration.json */; };
+		886812A4206C884E00419532 /* aws-ios-sdk-2.6.13 in Resources */ = {isa = PBXBuildFile; fileRef = 886812A3206C884E00419532 /* aws-ios-sdk-2.6.13 */; };
+		887E1366209A44F100598784 /* eac76c787c-certificate.pem.crt in Resources */ = {isa = PBXBuildFile; fileRef = 887E1363209A44F000598784 /* eac76c787c-certificate.pem.crt */; };
+		887E1367209A44F100598784 /* eac76c787c-public.pem.key in Resources */ = {isa = PBXBuildFile; fileRef = 887E1364209A44F100598784 /* eac76c787c-public.pem.key */; };
+		887E1368209A44F100598784 /* eac76c787c-private.pem.key in Resources */ = {isa = PBXBuildFile; fileRef = 887E1365209A44F100598784 /* eac76c787c-private.pem.key */; };
+		887E136A209CEA3200598784 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E1369209CEA3200598784 /* Constantes.swift */; };
+		8887A45B205DD5D800A55498 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8887A45A205DD5D800A55498 /* UIWindow+Extension.swift */; };
+		8887A45D205DD7D500A55498 /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8887A45C205DD7D500A55498 /* NotificationName+Extension.swift */; };
+		8887A468205E07A600A55498 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8887A467205E07A600A55498 /* GoogleService-Info.plist */; };
+		88CD2AC62069D6690050ABBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CD2AC52069D6690050ABBF /* LaunchScreen.xib */; };
+		88CD2AC82069F3E20050ABBF /* tickle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88CD2AC72069F3E10050ABBF /* tickle.mp3 */; };
+		88CD2ACA2069F3EE0050ABBF /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88CD2AC92069F3EE0050ABBF /* bell.mp3 */; };
+		88E3AFF320583EED00357D5C /* MainAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3AFF220583EED00357D5C /* MainAlarmViewController.swift */; };
+		88E3AFF520583F0B00357D5C /* AlarmAddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3AFF420583F0B00357D5C /* AlarmAddEditViewController.swift */; };
+		88E3AFF720583F2F00357D5C /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3AFF620583F2F00357D5C /* MediaViewController.swift */; };
+		88E3AFF920583F4400357D5C /* WeekdaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3AFF820583F4400357D5C /* WeekdaysViewController.swift */; };
+		88E3AFFB20583F5400357D5C /* LabelEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3AFFA20583F5400357D5C /* LabelEditViewController.swift */; };
+		88E3AFFE2058416000357D5C /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3AFFD2058416000357D5C /* Scheduler.swift */; };
+		88E3B0002058417700357D5C /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3AFFF2058417700357D5C /* Identifier.swift */; };
+		88E3B0032058429F00357D5C /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3B0022058429F00357D5C /* AlarmModel.swift */; };
+		88E3B005205842B600357D5C /* SegueInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3B004205842B600357D5C /* SegueInfo.swift */; };
+		88E3B0082058435E00357D5C /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3B0072058435E00357D5C /* Persistable.swift */; };
+		88E3B00A2058437300357D5C /* PropertyReflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3B0092058437300357D5C /* PropertyReflectable.swift */; };
+		88E3B00C2058438500357D5C /* AlarmApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3B00B2058438500357D5C /* AlarmApplicationDelegate.swift */; };
+		88E3B00E2058439600357D5C /* AlarmSchedulerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3B00D2058439600357D5C /* AlarmSchedulerDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FFDFCB573F0DF7AB9E4B40A /* Pods-SmartPlugRC1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPlugRC1.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartPlugRC1/Pods-SmartPlugRC1.release.xcconfig"; sourceTree = "<group>"; };
+		62DC21671FDDDCB700936700 /* SmartPlugRC1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPlugRC1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62DC216A1FDDDCB700936700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62DC216C1FDDDCB700936700 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		62DC216E1FDDDCB700936700 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		62DC21711FDDDCB700936700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62DC21731FDDDCB700936700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62DC21781FDDDCB700936700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62DC21811FDF944B00936700 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		62DC21831FDF946A00936700 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
+		86DE825426FD998F7EF7CE99 /* Pods-SmartPlugRC1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPlugRC1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartPlugRC1/Pods-SmartPlugRC1.debug.xcconfig"; sourceTree = "<group>"; };
+		8868129B206C819500419532 /* Alarma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarma.swift; sourceTree = "<group>"; };
+		8868129C206C819500419532 /* Coneccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coneccion.swift; sourceTree = "<group>"; };
+		8868129D206C819500419532 /* Registro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
+		886812A1206C86C700419532 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		886812A3206C884E00419532 /* aws-ios-sdk-2.6.13 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "aws-ios-sdk-2.6.13"; sourceTree = "<group>"; };
+		887E1363209A44F000598784 /* eac76c787c-certificate.pem.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "eac76c787c-certificate.pem.crt"; sourceTree = "<group>"; };
+		887E1364209A44F100598784 /* eac76c787c-public.pem.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "eac76c787c-public.pem.key"; sourceTree = "<group>"; };
+		887E1365209A44F100598784 /* eac76c787c-private.pem.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "eac76c787c-private.pem.key"; sourceTree = "<group>"; };
+		887E1369209CEA3200598784 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+		8887A45A205DD5D800A55498 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		8887A45C205DD7D500A55498 /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
+		8887A467205E07A600A55498 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		88CD2AC52069D6690050ABBF /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		88CD2AC72069F3E10050ABBF /* tickle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tickle.mp3; sourceTree = "<group>"; };
+		88CD2AC92069F3EE0050ABBF /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		88E3AFF220583EED00357D5C /* MainAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAlarmViewController.swift; sourceTree = "<group>"; };
+		88E3AFF420583F0B00357D5C /* AlarmAddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAddEditViewController.swift; sourceTree = "<group>"; };
+		88E3AFF620583F2F00357D5C /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		88E3AFF820583F4400357D5C /* WeekdaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdaysViewController.swift; sourceTree = "<group>"; };
+		88E3AFFA20583F5400357D5C /* LabelEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelEditViewController.swift; sourceTree = "<group>"; };
+		88E3AFFD2058416000357D5C /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		88E3AFFF2058417700357D5C /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		88E3B0022058429F00357D5C /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
+		88E3B004205842B600357D5C /* SegueInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueInfo.swift; sourceTree = "<group>"; };
+		88E3B0072058435E00357D5C /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		88E3B0092058437300357D5C /* PropertyReflectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyReflectable.swift; sourceTree = "<group>"; };
+		88E3B00B2058438500357D5C /* AlarmApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmApplicationDelegate.swift; sourceTree = "<group>"; };
+		88E3B00D2058439600357D5C /* AlarmSchedulerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSchedulerDelegate.swift; sourceTree = "<group>"; };
+		FDB9E6DBA06A9D6C8E058358 /* Pods_SmartPlugRC1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartPlugRC1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62DC21641FDDDCB700936700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715C98C987D6450394C77E5F /* Pods_SmartPlugRC1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C3D033DE650C1CC2B7C2678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDB9E6DBA06A9D6C8E058358 /* Pods_SmartPlugRC1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B2200E3A88055383FA72849 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86DE825426FD998F7EF7CE99 /* Pods-SmartPlugRC1.debug.xcconfig */,
+				0FFDFCB573F0DF7AB9E4B40A /* Pods-SmartPlugRC1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62DC215E1FDDDCB700936700 = {
+			isa = PBXGroup;
+			children = (
+				887E1363209A44F000598784 /* eac76c787c-certificate.pem.crt */,
+				887E1365209A44F100598784 /* eac76c787c-private.pem.key */,
+				887E1364209A44F100598784 /* eac76c787c-public.pem.key */,
+				886812A3206C884E00419532 /* aws-ios-sdk-2.6.13 */,
+				62DC21691FDDDCB700936700 /* SmartPlugRC1 */,
+				62DC21681FDDDCB700936700 /* Products */,
+				5B2200E3A88055383FA72849 /* Pods */,
+				4C3D033DE650C1CC2B7C2678 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62DC21681FDDDCB700936700 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62DC21671FDDDCB700936700 /* SmartPlugRC1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62DC21691FDDDCB700936700 /* SmartPlugRC1 */ = {
+			isa = PBXGroup;
+			children = (
+				886812A1206C86C700419532 /* awsconfiguration.json */,
+				88CD2AC92069F3EE0050ABBF /* bell.mp3 */,
+				88CD2AC72069F3E10050ABBF /* tickle.mp3 */,
+				62DC21701FDDDCB700936700 /* Main.storyboard */,
+				8887A467205E07A600A55498 /* GoogleService-Info.plist */,
+				8887A466205E031100A55498 /* Topics */,
+				8887A465205E02FA00A55498 /* Settings */,
+				8887A464205DFDFD00A55498 /* Controllers */,
+				8887A461205DFC3400A55498 /* Model */,
+				8887A460205DF97A00A55498 /* Protocol */,
+				8887A45F205DF95300A55498 /* App */,
+				8887A45E205DF92200A55498 /* Extension */,
+				62DC21731FDDDCB700936700 /* Assets.xcassets */,
+				62DC21781FDDDCB700936700 /* Info.plist */,
+				88CD2AC52069D6690050ABBF /* LaunchScreen.xib */,
+			);
+			path = SmartPlugRC1;
+			sourceTree = "<group>";
+		};
+		8868129A206C819500419532 /* NoSQL */ = {
+			isa = PBXGroup;
+			children = (
+				8868129B206C819500419532 /* Alarma.swift */,
+				8868129C206C819500419532 /* Coneccion.swift */,
+				8868129D206C819500419532 /* Registro.swift */,
+			);
+			path = NoSQL;
+			sourceTree = "<group>";
+		};
+		8887A45E205DF92200A55498 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8887A45A205DD5D800A55498 /* UIWindow+Extension.swift */,
+				8887A45C205DD7D500A55498 /* NotificationName+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		8887A45F205DF95300A55498 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				88E3AFFD2058416000357D5C /* Scheduler.swift */,
+				88E3AFFF2058417700357D5C /* Identifier.swift */,
+				62DC216A1FDDDCB700936700 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		8887A460205DF97A00A55498 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				88E3B00D2058439600357D5C /* AlarmSchedulerDelegate.swift */,
+				88E3B0072058435E00357D5C /* Persistable.swift */,
+				88E3B0092058437300357D5C /* PropertyReflectable.swift */,
+				88E3B00B2058438500357D5C /* AlarmApplicationDelegate.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		8887A461205DFC3400A55498 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8868129A206C819500419532 /* NoSQL */,
+				88E3B0022058429F00357D5C /* AlarmModel.swift */,
+				88E3B004205842B600357D5C /* SegueInfo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8887A464205DFDFD00A55498 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				62DC216C1FDDDCB700936700 /* FirstViewController.swift */,
+				62DC216E1FDDDCB700936700 /* SecondViewController.swift */,
+				88E3AFF220583EED00357D5C /* MainAlarmViewController.swift */,
+				88E3AFF420583F0B00357D5C /* AlarmAddEditViewController.swift */,
+				88E3AFF620583F2F00357D5C /* MediaViewController.swift */,
+				88E3AFF820583F4400357D5C /* WeekdaysViewController.swift */,
+				88E3AFFA20583F5400357D5C /* LabelEditViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8887A465205E02FA00A55498 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				62DC21811FDF944B00936700 /* Server.swift */,
+				887E1369209CEA3200598784 /* Constantes.swift */,
+			);
+			name = Settings;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		8887A466205E031100A55498 /* Topics */ = {
+			isa = PBXGroup;
+			children = (
+				62DC21831FDF946A00936700 /* Topics.swift */,
+			);
+			name = Topics;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62DC21661FDDDCB700936700 /* SmartPlugRC1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62DC217B1FDDDCB700936700 /* Build configuration list for PBXNativeTarget "SmartPlugRC1" */;
+			buildPhases = (
+				3F41343F9904F992634322CA /* [CP] Check Pods Manifest.lock */,
+				62DC21631FDDDCB700936700 /* Sources */,
+				62DC21641FDDDCB700936700 /* Frameworks */,
+				62DC21651FDDDCB700936700 /* Resources */,
+				3873DAD439422E3D308855D6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartPlugRC1;
+			productName = SmartPlugRC1;
+			productReference = 62DC21671FDDDCB700936700 /* SmartPlugRC1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62DC215F1FDDDCB700936700 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = com.RudyLLantoy;
+				TargetAttributes = {
+					62DC21661FDDDCB700936700 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 62DC21621FDDDCB700936700 /* Build configuration list for PBXProject "SmartPlugRC1" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62DC215E1FDDDCB700936700;
+			productRefGroup = 62DC21681FDDDCB700936700 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62DC21661FDDDCB700936700 /* SmartPlugRC1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62DC21651FDDDCB700936700 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88CD2AC62069D6690050ABBF /* LaunchScreen.xib in Resources */,
+				886812A4206C884E00419532 /* aws-ios-sdk-2.6.13 in Resources */,
+				886812A2206C86C700419532 /* awsconfiguration.json in Resources */,
+				8887A468205E07A600A55498 /* GoogleService-Info.plist in Resources */,
+				62DC21741FDDDCB700936700 /* Assets.xcassets in Resources */,
+				62DC21721FDDDCB700936700 /* Main.storyboard in Resources */,
+				887E1367209A44F100598784 /* eac76c787c-public.pem.key in Resources */,
+				88CD2AC82069F3E20050ABBF /* tickle.mp3 in Resources */,
+				887E1366209A44F100598784 /* eac76c787c-certificate.pem.crt in Resources */,
+				88CD2ACA2069F3EE0050ABBF /* bell.mp3 in Resources */,
+				887E1368209A44F100598784 /* eac76c787c-private.pem.key in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3873DAD439422E3D308855D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SmartPlugRC1/Pods-SmartPlugRC1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSEC2/AWSEC2.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSIoT/AWSIoT.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSES/AWSSES.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSNS/AWSSNS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSQS/AWSSQS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSimpleDB/AWSSimpleDB.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaMQTT/CocoaMQTT.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyTimer/SwiftyTimer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSEC2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSIoT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSES.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSNS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSQS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSimpleDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaMQTT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTimer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartPlugRC1/Pods-SmartPlugRC1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F41343F9904F992634322CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartPlugRC1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62DC21631FDDDCB700936700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886812A0206C819500419532 /* Registro.swift in Sources */,
+				8868129E206C819500419532 /* Alarma.swift in Sources */,
+				88E3AFFE2058416000357D5C /* Scheduler.swift in Sources */,
+				62DC216F1FDDDCB700936700 /* SecondViewController.swift in Sources */,
+				88E3B00A2058437300357D5C /* PropertyReflectable.swift in Sources */,
+				887E136A209CEA3200598784 /* Constantes.swift in Sources */,
+				62DC216B1FDDDCB700936700 /* AppDelegate.swift in Sources */,
+				62DC21841FDF946A00936700 /* Topics.swift in Sources */,
+				8887A45B205DD5D800A55498 /* UIWindow+Extension.swift in Sources */,
+				8868129F206C819500419532 /* Coneccion.swift in Sources */,
+				88E3AFF720583F2F00357D5C /* MediaViewController.swift in Sources */,
+				88E3B005205842B600357D5C /* SegueInfo.swift in Sources */,
+				88E3AFF520583F0B00357D5C /* AlarmAddEditViewController.swift in Sources */,
+				88E3AFF920583F4400357D5C /* WeekdaysViewController.swift in Sources */,
+				8887A45D205DD7D500A55498 /* NotificationName+Extension.swift in Sources */,
+				62DC21821FDF944B00936700 /* Server.swift in Sources */,
+				88E3B00E2058439600357D5C /* AlarmSchedulerDelegate.swift in Sources */,
+				88E3B0082058435E00357D5C /* Persistable.swift in Sources */,
+				88E3AFFB20583F5400357D5C /* LabelEditViewController.swift in Sources */,
+				62DC216D1FDDDCB700936700 /* FirstViewController.swift in Sources */,
+				88E3B00C2058438500357D5C /* AlarmApplicationDelegate.swift in Sources */,
+				88E3B0002058417700357D5C /* Identifier.swift in Sources */,
+				88E3AFF320583EED00357D5C /* MainAlarmViewController.swift in Sources */,
+				88E3B0032058429F00357D5C /* AlarmModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		62DC21701FDDDCB700936700 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62DC21711FDDDCB700936700 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62DC21791FDDDCB700936700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62DC217A1FDDDCB700936700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62DC217C1FDDDCB700936700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86DE825426FD998F7EF7CE99 /* Pods-SmartPlugRC1.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPX8QXW249;
+				INFOPLIST_FILE = SmartPlugRC1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RudyLLantoy.SmartPlugRC1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		62DC217D1FDDDCB700936700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FFDFCB573F0DF7AB9E4B40A /* Pods-SmartPlugRC1.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPX8QXW249;
+				INFOPLIST_FILE = SmartPlugRC1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RudyLLantoy.SmartPlugRC1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62DC21621FDDDCB700936700 /* Build configuration list for PBXProject "SmartPlugRC1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62DC21791FDDDCB700936700 /* Debug */,
+				62DC217A1FDDDCB700936700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62DC217B1FDDDCB700936700 /* Build configuration list for PBXNativeTarget "SmartPlugRC1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62DC217C1FDDDCB700936700 /* Debug */,
+				62DC217D1FDDDCB700936700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62DC215F1FDDDCB700936700 /* Project object */;
+}
